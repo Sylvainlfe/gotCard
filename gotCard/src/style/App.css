@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+@font-face {
+  font-family: "Game-of-Thrones";
+  src: url("../assets/font/Game-of-Thrones.ttf");
+}
+
+:root {
+  --primary-background-color: #389fcd;
+  --secondary-background-color: #121822;
+  --primary-color: #bdbbba;
+  --primary-font: "Game-of-Thrones";
+}
+
+body {
+  background-color: var(--secondary-background-color);
+}
+
+h1 {
+  font-family: "Game-of-Thrones";
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+li {
+  color: var(--secondary-background-color);
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--secondary-background-color);
+  font-family: var(--primary-font);
+}
