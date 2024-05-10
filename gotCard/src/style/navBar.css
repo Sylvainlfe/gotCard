@@ -27,18 +27,23 @@
     left: 0;
     width: 100%;
     min-height: 75px;
-    background-color: var(--primary-background-color);
+    background-color: var(--secondary-background-color);
     
   }
 
   .navBar_links {
     display: flex;
-    
+
   }
 
   .navBar_link {
-    padding: 0 0.3rem;
+    padding: 0 1rem;
     color: inherit;
+  }
+
+  .navBar_item:hover {
+    color: var(--primary-background-color);
+    
   }
 
   .navBar_burger {
@@ -62,7 +67,7 @@
       padding: 1rem;
       width: 100%;
       min-height: 75px;
-      background-color: var(--primary-background-color);
+      background-color: var(--secondary-background-color);
       
     }
 
@@ -74,7 +79,7 @@
       bottom: 0;
       height: 90vh;
       padding: 2rem;
-      background-color: var(--primary-background-color);
+      background-color: var(--secondary-background-color);
       visibility: hidden;
       transition: all 0.5s ease-out;
     }
@@ -110,7 +115,7 @@
       height: 3px;
       position: relative;
       border-radius: 3px;
-      background-color: var(--secondary-background-color);
+      background-color: var(--primary-color);
       transition: all 0.5s ease-in-out;
     }
   

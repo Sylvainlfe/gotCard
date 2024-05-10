@@ -8,6 +8,8 @@
 @font-face {
   font-family: "Game-of-Thrones";
   src: url("../assets/font/Game-of-Thrones.ttf");
+  font-family: "caudex-regular";
+  src: url("../assets/font/Caudex-Regular.ttf")
 }
 
 :root {
@@ -15,13 +17,14 @@
   --secondary-background-color: #121822;
   --primary-color: #bdbbba;
   --primary-font: "Game-of-Thrones";
+  --secondary-font: "caudex-regular";
 }
 
 body {
-  background-color: var(--secondary-background-color);
+  background-color: var(--primary-color);
 }
 
-h1 {
+h1, h2 {
   font-family: "Game-of-Thrones";
   color: var(--primary-color);
 }
@@ -34,7 +37,7 @@ ul {
 }
 
 li {
-  color: var(--secondary-background-color);
+  color: var(--primary-color);
   font-family: var(--primary-font);
 }
 
@@ -43,6 +46,15 @@ a {
 }
 
 .logo {
-  color: var(--secondary-background-color);
+  color: var(--primary-color);
   font-family: var(--primary-font);
+}
+
+.logo:hover {
+  color: var(--primary-background-color);
+}
+
+p {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
 }

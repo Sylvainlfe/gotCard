@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../style/navBar.css";
 
+
 function NavBar({}) {
   const [showBurger, setShowBurger] = useState(false);
 

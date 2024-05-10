@@ -17,26 +17,72 @@
     --primary-font: "Game-of-Thrones";
   }
 
-  .containCard {
-    margin-top: 100px;
-  }
-
   .character-list {
-    display: flex;
-    overflow-x: auto;
-
-    margin-left: 0.5rem;
-}
-
-  .character-card {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 0.5rem;
+
+  }
+
+  .characterCard {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--secondary-background-color);
+    padding: 1rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-top: 1rem;
+
+  }
+
+  .containImg {
+    width: 15rem;
+    height: auto;
+
   }
 
   .characterImg {
-    width: 30vh;
+    width: 15rem;
     height: auto;
+    margin-bottom: 0.5rem;
+
   }
+
+  .containDescription {
+    display: flex;
+    max-width: 15rem;
+    flex-direction: column;
+    gap:0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .titleCard {
+    border-bottom: 3px solid var(--primary-background-color);
+    padding-bottom: 0.5rem;
+  }
+
+  @media screen and (min-width: 767px) {
+
+    .character-list {
+      flex-direction: inherit;
+      flex-wrap: wrap;
+      
+    }
+
+    .characterCard {
+      margin-left: 1rem;
+      min-height: 38rem;
+      justify-content: flex-start;
+    }
+
+
+
+
+  }
+
+  
