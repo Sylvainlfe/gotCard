@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: "Game-of-Thrones";
+    src: url("../assets/font/Game-of-Thrones.ttf");
+  }
+  
+  :root {
+    --primary-background-color: #389fcd;
+    --secondary-background-color: #121822;
+    --primary-color: #bdbbba;
+    --primary-font: "Game-of-Thrones";
+  }
+
+  .containSearchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+  }
+  
+  .searchBar {
+    width: 40vh;
+    border-radius: 30px;
+    height: 5vh;
+    padding-left: 1rem;
+  }
