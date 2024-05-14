@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+@font-face {
+  font-family: "Game-of-Thrones";
+  src: url("../assets/font/Game-of-Thrones.ttf");
+  font-family: "caudex-regular";
+  src: url("../assets/font/Caudex-Regular.ttf");
+}
+
+:root {
+  --primary-background-color: #389fcd;
+  --secondary-background-color: #121822;
+  --primary-color: #bdbbba;
+  --primary-font: "Game-of-Thrones";
+  --secondary-font: "caudex-regular";
+}
+
+.containContinents {
+  display: flex;
+  margin-top: 100px;
+}
+
+.continentsName {
+  color: black;
+}

@@ -1,36 +1,33 @@
 import React from "react";
 import "../style/card.css";
 
-function Card({ characters }) {
+function Card({ character }) {
+
   return (
-    <section className="character-list">
-      {characters.map((character) => (
-        <article key={character.id} className="characterCard">
-          <figure className="containImg">
-            <img
-              src={character.imageUrl}
-              alt={character.fullName}
-              className="characterImg"
-            />
-          </figure>
-          <figcaption className="containDescription">
-            <h2 className="titleCard">{character.fullName}</h2>
-            <p>
-              <strong>First Name:</strong> {character.firstName}
-            </p>
-            <p>
-              <strong>Last Name:</strong> {character.lastName}
-            </p>
-            <p>
-              <strong>Title:</strong> {character.title}
-            </p>
-            <p>
-              <strong>Family:</strong> {character.family}
-            </p>
-          </figcaption>
-        </article>
-      ))}
-    </section>
+    <article key={character.id} className="characterCard">
+      <figure className="containImg">
+        <img
+          src={character.imageUrl}
+          alt={character.fullName}
+          className="characterImg"
+        />
+      </figure>
+      <figcaption className="containDescription">
+        <h2 className="titleCard">{character.fullName}</h2>
+        <p>
+          <strong>First Name:</strong> {character.firstName}
+        </p>
+        <p>
+          <strong>Last Name:</strong> {character.lastName}
+        </p>
+        <p>
+          <strong>Title:</strong> {character.title}
+        </p>
+        <p>
+          <strong>Family:</strong> {character.family}
+        </p>
+      </figcaption>
+    </article>
   );
 }
 
